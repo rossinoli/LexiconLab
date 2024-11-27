@@ -1,0 +1,113 @@
+/*background-color: #002855;
+background-color: #808080;*/
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+
+
+header{
+background-color: #002855;
+  text-align: center;
+  height: 100px; /* Ajuste a altura conforme necessário */
+  display: flex; /* Cria um container flexbox */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center;
+
+} header h1{
+    color: #E0E0E0;
+    font-size: 36px;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.container {
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  #phraseInput{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    place-items: center;
+    height: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 
+   10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+  
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; 
+  
+  }
+
+  .resun-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f0f0f0, #ccc); /* Gradiente de fundo */
+    background-size: cover;
+    margin-bottom: 30px;
+  }
+  
+  .resultado {
+
+    max-width: 800px; /* Define uma largura máxima, se necessário */
+    margin: 0 auto; /* Centraliza a caixa horizontalmente */
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .caixa-com-rolagem {
+    width: 600px; /* Define a largura da caixa */
+    height: 300px; /* Define a altura da caixa */
+    overflow-y: auto;
+    border: 1px solid #000000;
+    padding: 10px;
+  }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>LexiconLab |Home</title>
+</head>
+<body>
+    <header>
+        <h1>LexiconLab</h1>
+    </header>
+    <main>
+
+        <div class="container">
+            <h1>Escreva sua frase:</h1>
+            <input type="text" id="phraseInput" placeholder="Digite sua frase e aperte ENTER" onkeydown="processarFrase(event)">
+          </div>
+
+          <div class="resun-conatiner" > 
+          <div class="resultado">
+            <div class="caixa-com-rolagem">
+              <h2 id="resultadoOriginal">Frase Original</h2>
+              <p id="contagemCaracteresResultado"></p>
+              <p id="espacosRemovidosResultado"></p>
+              <p id="maiusculasResultado"></p>
+              <p id="minusculasResultado"></p>
+              <p id="invertidaResultado"></p>
+              <p id="palindromoResultado"></p>
+              <p id="palavrasResultado"></p>
+              <p id="palavrasOrdenadasResultado"></p>
+              <p id="contagemPalavrasResultado"></p>
+              <p id="palavrasFiltradasResultado"></p>
+              <p id="palavrasSubstituidasResultado"></p>
+            </div>
+          </div>
+        </div>
+
+          <div class="card-container">
+            <div class="card" data-funcao="contarCaracteres">
+              <h3>Contar Caracteres</h3>
+              <p>Conta quantos caracteres tem na frase, ignorando espaços.</p>
+              <button onclick="contarCaracteres()">Contar Caracteres</button>
+          </div>
+          <div class="card" data-funcao="removerEspacosExtras">
+              <h3>Remover Espaços Extras</h3>
+              <p>Remove espaços extras do início, fim e entre as palavras.</p>
+              <button onclick="removerEspacosExtras()">Remover Espaços Extras</button>
+          </div>
+          <div class="card" data-funcao="converterMaiusculasMinusculas">
+              <h3>Converter Maiúsculas/Minúsculas</h3>
+              <p>Converte a frase para maiúsculas e minúsculas.</p>
+              <button onclick="converterMaiusculasMinusculas()">Converter Maiúsculas/Minúsculas</button>
+          </div>
+          <div class="card" data-funcao="inverterString">
+              <h3>Inverter String</h3>
+              <p>Inverte a ordem dos caracteres da frase.</p>
+              <button onclick="inverterString()">Inverter String</button>
+          </div>
+          <div class="card" data-funcao="verificarPalindromo">
+              <h3>Verificar Palíndromo</h3>
+              <p>Verifica se a frase é um palíndromo.</p>
+              <button onclick="verificarPalindromo()">Verificar Palíndromo</button>
+          </div>
+          <div class="card" data-funcao="separarPalavras">
+              <h3>Separar Palavras</h3>
+              <p>Separa a frase em um array de palavras.</p>
+              <button onclick="separarPalavras()">Separar Palavras</button>
+          </div>
+          <div class="card" data-funcao="ordenarPalavras">
+              <h3>Ordenar Palavras</h3>
+              <p>Ordena as palavras em ordem alfabética.</p>
+              <button onclick="ordenarPalavras()">Ordenar Palavras</button>
+          </div>
+          <div class="card" data-funcao="contarOcorrenciasPalavras">
+              <h3>Contar Ocorrências de Palavras</h3>
+              <p>Conta quantas vezes cada palavra aparece na frase.</p>
+              <button onclick="contarOcorrenciasPalavras()">Contar Ocorrências de Palavras</button>
+          </div>
+          <div class="card" data-funcao="filtrarPalavras">
+              <h3>Filtrar Palavras (mais de 5 caracteres)</h3>
+              <p>Mostra apenas as palavras com mais de 5 caracteres.</p>
+              <button onclick="filtrarPalavras()">Filtrar Palavras</button>
+          </div>
+          <div class="card" data-funcao="substituirPalavras">
+              <h3>Substituir Palavras</h3>
+              <p>Substitui uma palavra por outra (solicita as palavras).</p>
+              <button onclick="substituirPalavras()">Substituir Palavras</button>
+          </div>
+            </div>
+    </main>
+   
+
+<script src="/JS/script.js"></script>
+</body>
+</html>
